@@ -10,11 +10,15 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-navigation/native": "^6.0.8",
+    "@react-navigation/stack": "^6.1.1",
     "axios": "^0.26.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
     "react": "17.0.2",
     "react-native": "0.67.2",
+    "react-native-gesture-handler": "^2.2.0",
+    "react-native-linear-gradient": "^2.5.6",
     "react-native-safe-area-context": "^3.4.0",
     "react-native-screens": "^3.11.1",
     "react-native-track-player": "^2.1.2",

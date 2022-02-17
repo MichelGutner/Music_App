@@ -6,7 +6,11 @@ import Home from './src/screens/Home';
 const App = () => {
   return (
     <NavigationContainer>
-      <StatusBar />
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
       <Home />
     </NavigationContainer>
   );
