@@ -17,4 +17,18 @@ export const AlbumImage = styled.ImageBackground`
   height: 400px;
   left: 20px;
   top: 50px;
+  border-radius: 30px;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+export const ButtonAlbumView = styled.View`
+  flex-direction: row;
+  width: 150px;
+  height: 60px;
+  background-color: #00bfff;
+  border-radius: 20px;
+  bottom: 20px;
+  align-items: center;
+  justify-content: center;
 `;

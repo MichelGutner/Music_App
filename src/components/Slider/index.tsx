@@ -5,9 +5,9 @@ import { Themes } from '../../../themes/Themes';
 import { Container, StopWatch } from './styles';
 
 type Props = {
-  trackLength: any;
-  currentPosition: any;
-  onSeek: any;
+  trackLength: number;
+  currentPosition: number;
+  onSeek: number;
   onSlidingStart: any;
 };
 
@@ -29,11 +29,13 @@ const ProgressBar = ({
   };
   return (
     <Container>
-      <View style={{ flexDirection: 'row' }}>
+      <View style={{ flexDirection: 'row', width: 250 }}>
         <StopWatch style={{ color: Themes.colors.white }}>
           {formatTime(currentPosition)}
         </StopWatch>
-        <StopWatch>{formatTime(trackLength)}</StopWatch>
+        <StopWatch style={{ marginLeft: 198 }}>
+          {formatTime(trackLength - currentPosition)}
+        </StopWatch>
       </View>
       <Slider
         maximumTrackTintColor="white"

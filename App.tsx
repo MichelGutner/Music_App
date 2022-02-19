@@ -1,7 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StatusBar } from 'react-native';
-import Home from './src/screens/Home';
+import { LogBox, StatusBar } from 'react-native';
+import Routes from './src/routes';
+
+LogBox.ignoreLogs([
+  "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
+]);
 
 const App = () => {
   return (
@@ -11,7 +15,7 @@ const App = () => {
         backgroundColor="transparent"
         translucent
       />
-      <Home />
+      <Routes />
     </NavigationContainer>
   );
 };
